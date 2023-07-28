@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_achilles6_row_data.mk
+    $(LOCAL_DIR)/lineage_X606X.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_achilles6_row_data-user \
-    omni_achilles6_row_data-userdebug \
-    omni_achilles6_row_data-eng
+    lineage_X606X-user \
+    lineage_X606X-userdebug \
+    lineage_X606X-eng

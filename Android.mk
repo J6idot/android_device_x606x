@@ -7,6 +7,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),achilles6_row_data)
+ifeq ($(TARGET_DEVICE),X606X)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif
