@@ -31,8 +31,8 @@ TARGET_SCREEN_WIDTH := 1200
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
-#PRODUCT_COPY_FILES += \
-#    $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/#audio_policy_configuration.xml
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_policy_configuration.xml
 
 # HIDL
 PRODUCT_PACKAGES += \
