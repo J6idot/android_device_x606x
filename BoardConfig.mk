@@ -97,11 +97,6 @@ USE_XML_AUDIO_POLICY_CONF := 1
 # Fstab
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6765
 
-# Sepolicy
-BOARD_SYSTEM_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/system
-BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
-#BOARD_PRIVATE_SEPOLICY_DIR := $(DEVICE_PATH)/sepolicy/private
-
 # inherit from proprietary shit
 -include vendor/lenovo/X606X/BoardConfigVendor.mk
 
