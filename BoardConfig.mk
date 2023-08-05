@@ -25,6 +25,9 @@ TARGET_USES_64_BIT_BINDER := true
 # Assert
 TARGET_OTA_ASSERT_DEVICE := TB-X606X,X606X
 
+# Apex
+DEXPREOPT_GENERATE_APEX_IMAGE := false
+
 # AVB
 #BOARD_AVB_ENABLE := true
 #BOARD_AVB_ALGORITHM := SHA256_RSA2048
@@ -86,7 +89,7 @@ BOARD_SEPOLICY_VERS := 29.0
 TARGET_ENABLE_MEDIADRM_64 := true
 
 # Metadata
-BOARD_USES_METADATA_PARTITION := false
+BOARD_USES_METADATA_PARTITION := true
 
 # Audio
 USE_XML_AUDIO_POLICY_CONF := 1
@@ -97,6 +100,9 @@ DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 
 # Fstab
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6765
+
+# inherit from proprietary shit
+-include vendor/lenovo/X606X/BoardConfigVendor.mk
 
 # inherit from proprietary shit
 -include vendor/lenovo/X606X/BoardConfigVendor.mk
