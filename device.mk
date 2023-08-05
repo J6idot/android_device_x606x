@@ -78,7 +78,8 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl \
     gralloc.default \
     libhwc2on1adapter \
-    libhwc2onfbadapter
+    libhwc2onfbadapter \
+    libdrm.vendor
 
 # Health
 PRODUCT_PACKAGES += \
