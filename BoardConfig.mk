@@ -95,6 +95,9 @@ BOARD_USES_METADATA_PARTITION := true
 # Audio
 USE_XML_AUDIO_POLICY_CONF := 1
 
+# Props
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+
 # Vintf
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
