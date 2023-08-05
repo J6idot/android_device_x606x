@@ -48,6 +48,18 @@ PRODUCT_PACKAGES += \
     fstab.mt8768 \
     init.mt8768.rc
 
+# HW
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/rootdir/etc/init/hw/,$(TARGET_COPY_OUT_VENDOR)/etc/init/hw)
+
+# Some MTK Jars
+#PRODUCT_BOOT_JARS += \
+#    mediatek-common \
+#    mediatek-framework \
+#    mediatek-ims-base \
+#    mediatek-ims-common \
+#    mediatek-services
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.mt6765:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6765
 
@@ -87,5 +99,6 @@ PRODUCT_PACKAGES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
+    android.hardware.keymaster@4.0-service \
     libkeymaster4.vendor
 
