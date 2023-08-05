@@ -65,6 +65,10 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     vendor/lenovo/X606X/proprietary/vendor/etc/fstab.mt6765:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.mt6765
+
+# Audio
+PRODUCT_PACKAGES += \
+    android.hardware.audio.effect@5.0-impl
     
 # Display
 PRODUCT_PACKAGES += \
