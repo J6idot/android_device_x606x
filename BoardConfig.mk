@@ -84,6 +84,7 @@ TARGET_BOARD_PLATFORM := mt6765
 
 # SEPolicy
 BOARD_SEPOLICY_VERS := 29.0
+BUILD_BROKEN_DUP_RULES := true
 
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
@@ -100,9 +101,6 @@ DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 
 # Fstab
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6765
-
-# inherit from proprietary shit
--include vendor/lenovo/X606X/BoardConfigVendor.mk
 
 # inherit from proprietary shit
 -include vendor/lenovo/X606X/BoardConfigVendor.mk
