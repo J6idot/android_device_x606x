@@ -53,12 +53,20 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/rootdir/etc/init/hw/,$(TARGET_COPY_OUT_VENDOR)/etc/init/hw)
 
 # Some MTK Jars
-#PRODUCT_BOOT_JARS += \
-#    mediatek-common \
-#    mediatek-framework \
-#    mediatek-ims-base \
+PRODUCT_BOOT_JARS += \
+    mediatek-common \
+    mediatek-cta \
+    mediatek-framework \
+    mediatek-framework-net \
+    mediatek-ims-base \
 #    mediatek-ims-common \
-#    mediatek-services
+#    mediatek-ims-extension-plugin \
+#    mediatek-ims-legacy \
+    mediatek-services
+#    mediatek-telecom-common \
+#    mediatek-telephony-base \
+#    mediatek-telephony-common \
+#    mediatek-wfo-legacy
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.mt6765:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6765
@@ -69,7 +77,7 @@ PRODUCT_COPY_FILES += \
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.effect@5.0-impl
-    
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-service \
