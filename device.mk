@@ -62,11 +62,11 @@ PRODUCT_BOOT_JARS += \
 #    mediatek-ims-common \
 #    mediatek-ims-extension-plugin \
 #    mediatek-ims-legacy \
-    mediatek-services
-#    mediatek-telecom-common \
-#    mediatek-telephony-base \
+    mediatek-services \
+    mediatek-telecom-common \
+    mediatek-telephony-base \
 #    mediatek-telephony-common \
-#    mediatek-wfo-legacy
+    mediatek-wfo-legacy
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.mt6765:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6765
