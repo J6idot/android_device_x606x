@@ -84,6 +84,7 @@ TARGET_BOARD_PLATFORM := mt6765
 
 # SEPolicy
 BOARD_SEPOLICY_VERS := 29.0
+-include device/mediatek/sepolicy/sepolicy.mk
 BUILD_BROKEN_DUP_RULES := true
 
 # DRM
