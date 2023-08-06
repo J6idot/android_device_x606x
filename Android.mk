@@ -10,11 +10,6 @@ LOCAL_PATH := $(call my-dir)
 ifeq ($(TARGET_DEVICE),X606X)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
-# shit
-ifeq ($(BOARD_HAS_MTK_HARDWARE),true)
-include $(call all-subdir-makefiles)
-endif
-
 VENDOR_SYMLINKS := \
     $(TARGET_OUT_VENDOR)/lib \
     $(TARGET_OUT_VENDOR)/lib/hw \
