@@ -77,7 +77,9 @@ PRODUCT_COPY_FILES += \
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.effect@5.0-impl \
-    libalsautils
+    libalsautils \
+    libnbaio_mono
+    
 
 # Display
 PRODUCT_PACKAGES += \
