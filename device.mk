@@ -78,7 +78,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.audio.effect@5.0-impl \
     libalsautils \
-    libnbaio_mono
+    libnbaio_mono \
+    libtinycompress
     
 
 # Display
