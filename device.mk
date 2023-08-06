@@ -41,16 +41,25 @@ PRODUCT_PACKAGES += \
     libhidltransport \
     libhwbinder
 
-# Ramdisk
+# Vendor
 PRODUCT_PACKAGES += \
-    fstab.mt6765 \
+    factory_init.connectivity.rc \
+    factory_init.project.rc \
+    factory_init.rc \
+    init.ago.rc \
+    init.connectivity.rc \
+    init.modem.rc \
     init.mt6765.rc \
-    fstab.mt8768 \
-    init.mt8768.rc
-
-# HW
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/rootdir/etc/init/hw/,$(TARGET_COPY_OUT_VENDOR)/etc/init/hw)
+    init.mt6765.usb.rc \
+    init.mt8768.rc \
+    init.project.rc \
+    init.sensor_1_0.rc \
+    meta_init.connectivity.rc \
+    meta_init.modem.rc \
+    meta_init.project.rc \
+    meta_init.rc \
+    multi_init.rc
+    
 
 # Some MTK Jars
 PRODUCT_BOOT_JARS += \
@@ -59,7 +68,7 @@ PRODUCT_BOOT_JARS += \
     mediatek-framework \
     mediatek-framework-net \
     mediatek-ims-base \
-#    mediatek-ims-common \
+    mediatek-ims-common \
 #    mediatek-ims-extension-plugin \
 #    mediatek-ims-legacy \
     mediatek-services \
@@ -68,19 +77,11 @@ PRODUCT_BOOT_JARS += \
 #    mediatek-telephony-common \
     mediatek-wfo-legacy
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.mt6765:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6765
-
-PRODUCT_COPY_FILES += \
-    vendor/lenovo/X606X/proprietary/vendor/etc/fstab.mt6765:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.mt6765
-
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.effect@5.0-impl \
     libalsautils \
-    libnbaio_mono \
-    libtinycompress
-    
+    libnbaio_mono
 
 # Display
 PRODUCT_PACKAGES += \
