@@ -80,6 +80,10 @@ PRODUCT_BOOT_JARS += \
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.effect@5.0-impl \
+    audio.bluetooth.default \
+    audio.r_submix.default \
+    audio.usb.default \
+    audio_policy.stub \
     libalsautils \
     libnbaio_mono
 
@@ -118,5 +122,6 @@ PRODUCT_PACKAGES += \
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.0-service \
-    libkeymaster4.vendor
+    libkeymaster4.vendor \
+    libkeymaster4support.vendor
 
