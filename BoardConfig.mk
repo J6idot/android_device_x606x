@@ -87,19 +87,20 @@ TARGET_BOARD_PLATFORM := mt6765
 # SEPolicy
 BOARD_SEPOLICY_VERS := 29.0
 #BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
-#-include device/mediatek/sepolicy/sepolicy.mk
+#include device/mediatek/sepolicy/sepolicy.mk
 BUILD_BROKEN_DUP_RULES := true
 
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
 
 # Metadata
-BOARD_USES_METADATA_PARTITION := true
+BOARD_USES_METADATA_PARTITION := false
 
 # Audio
 USE_XML_AUDIO_POLICY_CONF := 1
 
 # Props
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Vintf
