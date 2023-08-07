@@ -1,11 +1,5 @@
-# unknown
-vendor.connsys.driver.ready=no
-
 # Taken from Stock ROM
 ro.carrier=unknown
-ro.config.notification_sound=Betelgeuse.ogg
-ro.config.ringtone=BeatPlucker.ogg
-ro.config.alarm_alert=Alarm_Classic.ogg
 persist.vendor.dspg.low_power_mode=0
 ro.mediatek.chip_ver=S01
 ro.mediatek.platform=MT6765
