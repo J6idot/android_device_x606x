@@ -17,11 +17,17 @@
 # Enable updating of APEXes
 #$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
+# Dalvik-Heap
+$(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
+
 # include board vendor blobs
 $(call inherit-product-if-exists, vendor/lenovo/X606X/X606X-vendor.mk)
 
 # API
 PRODUCT_SHIPPING_API_LEVEL := 29
+
+# Tablet
+PRODUCT_CHARACTERISTICS := tablet
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
@@ -34,6 +40,13 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_policy_configuration.xml
 
+# Ramdisk
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/fstab.mt6765:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6765
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/fstab.mt8768:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt8768
+    
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0_system \
@@ -58,7 +71,8 @@ PRODUCT_PACKAGES += \
     meta_init.modem.rc \
     meta_init.project.rc \
     meta_init.rc \
-    multi_init.rc
+    multi_init.rc \
+    fstab.mt6765
     
 
 # Some MTK Jars
