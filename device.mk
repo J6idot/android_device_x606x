@@ -72,7 +72,8 @@ PRODUCT_PACKAGES += \
     meta_init.project.rc \
     meta_init.rc \
     multi_init.rc \
-    fstab.mt6765
+    fstab.mt6765 \
+    fstab.mt8768
     
 
 # Some MTK Jars
@@ -88,7 +89,7 @@ PRODUCT_BOOT_JARS += \
     mediatek-services \
     mediatek-telecom-common \
     mediatek-telephony-base \
-#    mediatek-telephony-common \
+    mediatek-telephony-common \
     mediatek-wfo-legacy
 
 # Audio
@@ -131,6 +132,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service \
     android.hardware.gatekeeper@1.0-impl
+
+# Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@1.0-service \
+    android.hardware.thermal@1.0-impl
 
 # Keymaster
 PRODUCT_PACKAGES += \
