@@ -10,7 +10,7 @@
 
 /dev/block/platform/bootdevice/by-name/vendor /vendor ext4 ro wait,,avb,first_stage_mount
 # 140 "vendor/mediatek/proprietary/hardware/fstab/mt6765/fstab.in.mt6765"
-/dev/block/platform/bootdevice/by-name/userdata /data ext4 noatime,nosuid,nodev,noauto_da_alloc,errors=panic wait,check,quota,reservedsize=200M,formattable,resize,forcefdeorfbe=/dev/block/platform/bootdevice/by-name/metadata
+/dev/block/platform/bootdevice/by-name/userdata /data ext4 noatime,nosuid,nodev,noauto_da_alloc,errors=panic wait,check,quota,reservedsize=200M,formattable,resize
 
 /dev/block/platform/bootdevice/by-name/cache /cache ext4 noatime,nosuid,nodev,noauto_da_alloc,discard wait,check,formattable
 
