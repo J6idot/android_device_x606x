@@ -77,20 +77,20 @@ PRODUCT_PACKAGES += \
     
 
 # Some MTK Jars
-PRODUCT_BOOT_JARS += \
-    mediatek-common \
-    mediatek-cta \
-    mediatek-framework \
-    mediatek-framework-net \
-    mediatek-ims-base \
-    mediatek-ims-common \
+#PRODUCT_BOOT_JARS += \
+#    mediatek-common \
+#    mediatek-cta \
+#    mediatek-framework \
+#    mediatek-framework-net \
+#    mediatek-ims-base \
+#    mediatek-ims-common \
 #    mediatek-ims-extension-plugin \
 #    mediatek-ims-legacy \
-    mediatek-services \
-    mediatek-telecom-common \
-    mediatek-telephony-base \
-    mediatek-telephony-common \
-    mediatek-wfo-legacy
+#    mediatek-services \
+#    mediatek-telecom-common \
+#    mediatek-telephony-base \
+#    mediatek-telephony-common \
+#    mediatek-wfo-legacy
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -144,3 +144,37 @@ PRODUCT_PACKAGES += \
     libkeymaster4.vendor \
     libkeymaster4support.vendor
 
+# Radio
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.0 \
+    android.hardware.radio@1.1 \
+    android.hardware.radio@1.2 \
+    android.hardware.radio@1.3 \
+    android.hardware.radio@1.4 \
+    android.hardware.radio.deprecated@1.0 \
+    android.hardware.radio.config@1.1 \
+    android.hardware.radio-V1.2-java
+
+# Sensors
+PRODUCT_PACKAGES += \
+    libsensorndkbridge
+
+# WI-FI
+PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.0-service-lazy-X606X \
+    libkeystore-wifi-hidl \
+    libkeystore-engine-wifi-hidl
+
+# Permissions
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml \
+    frameworks/native/data/etc/android.hardware.bluetooth_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth_le.xml \
+    frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml \
+    frameworks/native/data/etc/android.hardware.screen.landscape.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.screen.landscape.xml \
+    frameworks/native/data/etc/android.hardware.screen.portrait.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.screen.portrait.xml \
+    frameworks/native/data/etc/android.hardware.sensor.accelerometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.accelerometer.xml \
+    frameworks/native/data/etc/android.hardware.sensor.proximity.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.proximity.xml \
+    frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.ims.xml \
+    frameworks/native/data/etc/android.hardware.wifi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.xml \
+    frameworks/native/data/etc/android.hardware.wifi.direct.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.direct.xml \
+    frameworks/native/data/etc/android.hardware.wifi.passpoint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.passpoint.xml
