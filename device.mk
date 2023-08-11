@@ -162,8 +162,8 @@ PRODUCT_PACKAGES += \
 # WI-FI
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service-lazy-X606X \
-    libkeystore-wifi-hidl \
-    libkeystore-engine-wifi-hidl
+    libkeystore-wifi-hidl:64 \
+    libkeystore-engine-wifi-hidl:64
 
 # Permissions
 PRODUCT_COPY_FILES += \
