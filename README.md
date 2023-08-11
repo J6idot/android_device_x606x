@@ -18,8 +18,8 @@ This device tree is currently WIP.
 
 ## **To do:**
 - [x] Build vibrator from source
-- [ ] Build soundtrigger from source
-- [ ] Build some audio libraries from source
+- [x] Build soundtrigger from source
+- [x] Build some audio libraries from source
 - [x] Build WI-FI from source
 - [ ] Build one omx plugin from source
 - [ ] Build mapper@2.0-impl-2.1 from source, if possible.
