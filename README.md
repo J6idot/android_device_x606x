@@ -5,16 +5,18 @@ This device tree is currently WIP.
 ## **What works:**
 - [x] WI-FI
 - [x] Bluetooth
-- [ ] Audio (Only works if you manually copy libtinycompress and libtinyxml. As of know, we can't prebuild it nor build it from source.)
+- [x] Audio (Fixed the libtinycompress and libtinyxml not being copied.)
 - [x] Setup Wizard
 - [x] Camera
+- [x] RIL/Data
 
 ## **What doesn't work:**
+- [ ] Calls
 - [ ] Sensors
 - [ ] DT2W
 - [ ] Raise To Wake
 - [ ] Offline Charging
-- [ ] SIM (Untested)
+
 
 ## **To do:**
 - [x] Build vibrator from source
