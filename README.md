@@ -19,6 +19,7 @@ This device tree is currently WIP.
 
 
 ## **To do:**
+- [ ] Get the LED working
 - [x] Build vibrator from source
 - [x] Build soundtrigger from source
 - [x] Build some audio libraries from source
